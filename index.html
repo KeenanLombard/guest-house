@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salt & Still — A slower kind of seaside stay</title>
+  <meta name="description" content="A little closer to doing nothing. Discover Salt & Still, a luxury guest house website concept set in Wilderness on South Africa’s Garden Route.">
+  <meta name="theme-color" content="#203e49">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Salt & Still — A slower kind of seaside stay">
+  <meta property="og:description" content="Ocean air. Unhurried mornings. A coastal guest house concept in Wilderness, South Africa.">
+  <meta property="og:image" content="assets/coast.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" as="image" href="assets/coast.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7"/></symbol>
+    <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="sun" viewBox="0 0 48 48"><circle cx="24" cy="24" r="9"/><path d="M24 2v7m0 30v7M2 24h7m30 0h7M8.4 8.4l5 5m21.2 21.2 5 5M8.4 39.6l5-5m21.2-21.2 5-5M15.6 3.7l2.7 6.5m11.4 27.6 2.7 6.5M3.7 32.4l6.5-2.7m27.6-11.4 6.5-2.7M3.7 15.6l6.5 2.7m27.6 11.4 6.5 2.7M15.6 44.3l2.7-6.5m11.4-27.6 2.7-6.5"/></symbol>
+    <symbol id="wave" viewBox="0 0 48 32"><path d="M2 12c7-10 15 10 22 0s15 10 22 0M2 22c7-10 15 10 22 0s15 10 22 0"/></symbol>
+    <symbol id="leaf" viewBox="0 0 48 48"><path d="M10 38C-2 15 18 6 39 7c2 22-7 39-29 31ZM9 40l22-24M17 31V20m7 4h9"/></symbol>
+    <symbol id="cup" viewBox="0 0 48 48"><path d="M9 20h25v12c0 8-25 8-25 0V20Zm25 2h3c10 0 9 12-3 12M5 42h34M16 14c-5-4 5-5 0-10m10 10c-5-4 5-5 0-10"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#our-house">Our house</a><a href="#suites">The suites</a><a href="#wilderness">Wilderness</a></nav>
+      <a class="wordmark" href="#" aria-label="Salt and Still, home">salt <span>&</span> still<small>A WILDERNESS GUEST HOUSE</small></a>
+      <div class="header-right"><span class="header-location">WILDERNESS, SOUTH AFRICA</span><a href="#plan" class="button button-outline header-book">Come stay <svg class="icon"><use href="#arrow-up"/></svg></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button></div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#our-house">Our house</a><a href="#suites">The suites</a><a href="#wilderness">Wilderness</a><a href="#plan">Plan your stay <span>↗</span></a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/coast.jpg" width="1942" height="809" alt="Golden light over a secluded coastal terrace, dune grasses and the ocean" fetchpriority="high">
+      <div class="hero-overlay"></div>
+      <div class="hero-topline wrap"><span>A SLOWER KIND OF SEASIDE STAY</span><span>GARDEN ROUTE · WESTERN CAPE</span></div>
+      <div class="hero-content wrap"><p class="eyebrow">BAREFOOT LUXURY. BEAUTIFULLY SIMPLE.</p><h1 id="hero-title">A little closer to<br><em>doing nothing.</em></h1><div class="hero-bottom"><p>Ocean air. Unhurried mornings.<br>A little place to feel like yourself again.</p><a href="#our-house" class="hero-discover">Discover our little escape <span class="round-arrow">↓</span></a></div></div>
+      <span class="hero-caption">The view comes with the room.</span>
+    </section>
+
+    <section class="stay-strip" id="plan" aria-label="Plan your stay">
+      <div class="stay-strip-inner wrap">
+      <div class="stay-strip-intro"><span class="eyebrow">YOUR NEXT EXHALE</span><p>Make a little time.</p></div>
+      <form id="stay-form" class="stay-form">
+        <div class="date-field"><label for="arrival">Arrival</label><input id="arrival" name="arrival" type="date" required aria-describedby="date-error"></div>
+        <div class="date-field"><label for="departure">Departure</label><input id="departure" name="departure" type="date" required aria-describedby="date-error"></div>
+        <div class="guest-field"><label for="guests">Guests</label><select id="guests" name="guests"><option value="2">2 guests</option><option value="1">1 guest</option></select></div>
+        <button class="button button-cream" type="submit">Find your escape <svg class="icon"><use href="#arrow"/></svg></button>
+        <p id="date-error" class="date-error" role="status"></p>
+      </form>
+      </div>
+    </section>
+
+    <section id="our-house" class="introduction wrap section-space" aria-labelledby="intro-title">
+      <div class="intro-heading" data-reveal><p class="eyebrow">WELCOME TO SALT & STILL</p><h2 id="intro-title">Less on the agenda.<br><em>More in the moment.</em></h2><svg class="intro-sun line-art" aria-hidden="true"><use href="#sun"/></svg></div>
+      <div class="intro-copy" data-reveal><p class="lead">Somewhere between the dunes and the deep blue, there’s a quieter way to be.</p><p>Welcome to our little corner of Wilderness. A coastal hideaway imagined for slow mornings, sandy feet and the luxury of having nowhere else to be.</p><p>Think soft linen, something good in your cup, and the ocean setting the pace. Settle in. Stay a little longer.</p><a class="text-link" href="#the-little-things">A feel for life here <svg class="icon"><use href="#arrow"/></svg></a></div>
+    </section>
+
+    <div class="little-things wrap" id="the-little-things" aria-label="Life at the house">
+      <div><svg class="line-art" aria-hidden="true"><use href="#wave"/></svg><span>The ocean, always close</span></div><div><svg class="line-art" aria-hidden="true"><use href="#cup"/></svg><span>Slow, generous breakfasts</span></div><div><svg class="line-art" aria-hidden="true"><use href="#sun"/></svg><span>Sun-soaked spaces</span></div><div><svg class="line-art" aria-hidden="true"><use href="#leaf"/></svg><span>A naturally lighter footprint</span></div>
+    </div>
+
+    <section class="suites-section section-space" id="suites" aria-labelledby="suites-title">
+      <div class="wrap"><div class="section-heading" data-reveal><div><p class="eyebrow">ROOM TO UNWIND</p><h2 id="suites-title">Your own little<br><em>piece of the coast.</em></h2></div><p>Natural textures. Thoughtful comforts.<br>And absolutely no rush to get up.</p></div>
+        <div class="suite-grid">
+          <article class="suite-card" data-reveal><button type="button" class="suite-image" data-room="ocean" aria-label="Explore the Ocean Suite"><img src="assets/ocean-suite.jpg" width="1200" height="800" loading="lazy" alt="An airy ocean-view suite with soft ivory linen and timber doors opening to the sea"><span class="image-tag">FOR THE SEA DREAMERS</span><span class="image-arrow" aria-hidden="true">↗</span></button><div class="suite-meta"><span>01 / OCEAN & SKY</span><span>2 GUESTS · 42 M²</span></div><h3><button type="button" data-room="ocean">The Ocean Suite</button></h3><p>Wake up where the blue begins. A king-size bed, a private balcony and a front-row seat to the sea.</p><div class="suite-bottom"><p>From <strong>R2,850</strong> <span>/ night</span></p><button class="text-link" type="button" data-room="ocean">Explore suite <svg class="icon"><use href="#arrow"/></svg></button></div></article>
+          <article class="suite-card" data-reveal><button type="button" class="suite-image" data-room="dune" aria-label="Explore the Dune Suite"><img src="assets/dune-suite.jpg" width="1200" height="800" loading="lazy" alt="A restful cream bedroom overlooking coastal dune grasses"><span class="image-tag">FOR THE QUIET SEEKERS</span><span class="image-arrow" aria-hidden="true">↗</span></button><div class="suite-meta"><span>02 / SAND & STILLNESS</span><span>2 GUESTS · 36 M²</span></div><h3><button type="button" data-room="dune">The Dune Suite</button></h3><p>Soft light, warm textures and fynbos at your window. A tucked-away haven for a slower kind of stay.</p><div class="suite-bottom"><p>From <strong>R2,450</strong> <span>/ night</span></p><button class="text-link" type="button" data-room="dune">Explore suite <svg class="icon"><use href="#arrow"/></svg></button></div></article>
+        </div>
+        <div class="suite-note"><span>Every stay includes breakfast, Wi-Fi and a little breathing room.</span><span>Illustrative rates for this concept.</span></div>
+      </div>
+    </section>
+
+    <section class="house-moments" aria-labelledby="moments-title"><div class="moments-photo"><img src="assets/pool-terrace.jpg" width="1200" height="800" loading="lazy" alt="A tranquil plunge pool and sun loungers on a limestone terrace above the sea"><span>THE ART OF TAKING IT EASY</span></div><div class="moments-copy" data-reveal><svg class="line-art" aria-hidden="true"><use href="#sun"/></svg><p class="eyebrow">THIS IS YOUR KIND OF BUSY</p><h2 id="moments-title">A dip. A book.<br><em>Another coffee.</em></h2><p>Our favourite kind of day starts slowly and goes wonderfully off schedule. Drift between the pool and your sun lounger. Find a shady spot. Watch the light change.</p><p>Here, the little things are the whole point.</p><a href="#plan" class="text-link">Leave a little room for nothing <svg class="icon"><use href="#arrow"/></svg></a></div></section>
+
+    <section class="wilderness-section wrap section-space" id="wilderness" aria-labelledby="wilderness-title"><div class="section-heading" data-reveal><div><p class="eyebrow">A BEAUTIFUL PLACE TO GET A LITTLE LOST</p><h2 id="wilderness-title">Wild at heart.<br><em>Easy on the soul.</em></h2></div><p>Beyond the house, a whole different<br>kind of wonder is waiting.</p></div>
+      <div class="destination-layout"><div class="destination-visual"><img src="assets/coast.jpg" width="1200" height="900" loading="lazy" alt="A long stretch of sandy coastline framed by green hills and the Indian Ocean"><div class="destination-marker"><svg class="icon"><use href="#pin"/></svg><div><strong>Wilderness</strong><span>Garden Route, South Africa</span></div></div></div><div class="destination-guide"><div class="guide-tabs" role="tablist" aria-label="Explore Wilderness"><button type="button" id="tab-coast" role="tab" aria-selected="true" aria-controls="guide-panel" data-guide="coast">The coast</button><button type="button" id="tab-nature" role="tab" aria-selected="false" aria-controls="guide-panel" tabindex="-1" data-guide="nature">The wild</button><button type="button" id="tab-slow" role="tab" aria-selected="false" aria-controls="guide-panel" tabindex="-1" data-guide="slow">The slow life</button></div><div id="guide-panel" role="tabpanel" aria-labelledby="tab-coast" tabindex="0"><span class="guide-number" aria-hidden="true">01</span><h3 id="guide-title">Follow the shoreline.</h3><p id="guide-description">Wide-open sand, salt on your skin and the sound of the Indian Ocean. Wilderness is made for long beach walks and stopping simply because the view asks you to.</p><ul id="guide-list"><li>Wander along Wilderness Beach</li><li>Watch the surf at the Touw River mouth</li><li>Take your time with an ocean-view picnic</li></ul><a id="guide-link" class="text-link" href="https://www.sanparks.org/parks/garden-route/what-to-do/activities/beach-access" target="_blank" rel="noopener noreferrer">A little local inspiration <svg class="icon"><use href="#arrow-up"/></svg></a></div></div></div>
+    </section>
+
+    <section class="pause-section"><div class="wrap pause-inner" data-reveal><span class="eyebrow">A NOTE TO TAKE HOME</span><p>“Perhaps the best thing you’ll<br>find here is a little more <em>of yourself.</em>”</p><svg class="line-art" aria-hidden="true"><use href="#wave"/></svg></div></section>
+
+    <section class="faq-section wrap section-space" aria-labelledby="faq-title"><div data-reveal><p class="eyebrow">BEFORE YOU ARRIVE</p><h2 id="faq-title">A few little<br><em>things to know.</em></h2><p>The practical bits, so you can get<br>back to looking forward to it.</p></div><div class="faq-list" data-reveal><details><summary>What does a stay include?<span aria-hidden="true">+</span></summary><p>In this guest house concept, both suites include a leisurely breakfast, Wi-Fi, parking and access to the shared pool and terrace. The Ocean Suite also has its own sea-facing balcony.</p></details><details><summary>When can we check in and out?<span aria-hidden="true">+</span></summary><p>The sample stay runs from check-in at 14:00 to check-out at 10:00. Early arrivals and a little extra time would be arranged with your host, subject to availability.</p></details><details><summary>Where in South Africa is Wilderness?<span aria-hidden="true">+</span></summary><p>Wilderness is on the Garden Route in the Western Cape, near George. It’s a coastal base for beach walks, exploring the Touw River and visiting the Wilderness section of Garden Route National Park.</p><a href="https://www.google.com/maps/search/?api=1&query=Wilderness+Western+Cape+South+Africa" target="_blank" rel="noopener noreferrer">Explore Wilderness on the map ↗</a></details><details><summary>Can I make a real booking here?<span aria-hidden="true">+</span></summary><p>Salt & Still is a fictional guest house created as a website portfolio project. You can explore the suites and try the stay planner, but no reservation, payment or enquiry is sent. All rates and property details are illustrative.</p></details></div></section>
+
+    <section class="closing-section"><div class="wrap closing-inner" data-reveal><div><p class="eyebrow">THE COAST IS CALLING</p><h2>A change of scenery.<br><em>A little more still.</em></h2><a href="#plan" class="button button-cream">Let’s make time for it <svg class="icon"><use href="#arrow"/></svg><p class="closing-note">Your seaside daydream starts with a date.</p></div><a class="wordmark closing-logo" href="#" aria-label="Salt and Still, home">salt <span>&</span> still<small>A WILDERNESS GUEST HOUSE</small></a></div></section>
+  </main>
+
+  <footer class="site-footer wrap"><div class="footer-top"><a class="wordmark" href="#">salt <span>&</span> still<small>A WILDERNESS GUEST HOUSE</small></a><p>A little salt in the air.<br>A little stillness in the soul.</p><nav aria-label="Footer navigation"><a href="#our-house">Our house</a><a href="#suites">The suites</a><a href="#wilderness">Wilderness</a><a href="#plan">Come stay ↗</a></nav></div><div class="footer-bottom"><span>© <span id="year">2026</span> Salt & Still. A fictional coastal escape.</span><span>Portfolio concept · Imagery created with AI</span><a href="#">Back to the top ↑</a></div></footer>
+
+  <dialog id="room-dialog" class="room-dialog" aria-labelledby="room-title"><button type="button" class="dialog-close" data-close aria-label="Close suite details"><svg class="icon"><use href="#close"/></svg></button><img id="room-photo" src="assets/ocean-suite.jpg" width="1200" height="800" alt=""><div class="room-dialog-copy"><p id="room-eyebrow" class="eyebrow"></p><h2 id="room-title"></h2><p id="room-description"></p><ul id="room-amenities" class="room-amenities"></ul><div class="room-dialog-bottom"><p>From <strong id="room-rate"></strong><span> per night · breakfast included</span></p><button type="button" id="choose-suite" class="button button-blue">Plan a stay here <svg class="icon"><use href="#arrow"/></svg></button></div><p class="demo-note">A fictional suite. Rates and amenities are illustrative.</p></div></dialog>
+
+  <dialog id="booking-dialog" class="booking-dialog" aria-labelledby="booking-title"><button type="button" class="dialog-close" data-close aria-label="Close stay planner"><svg class="icon"><use href="#close"/></svg></button><div class="booking-dialog-heading"><p class="eyebrow">A LITTLE SOMETHING TO LOOK FORWARD TO</p><h2 id="booking-title">Your seaside escape.</h2><p id="stay-dates"></p></div><div id="booking-choices" class="booking-choices"></div><div class="booking-estimate"><div><span id="estimate-label">Estimated stay</span><strong id="estimate-total"></strong></div><p>Breakfast included. Illustrative rates in ZAR.</p></div><button id="preview-stay" class="button button-blue" type="button">Preview your stay <svg class="icon"><use href="#arrow"/></svg></button><div id="stay-preview" class="stay-preview" role="status" hidden><strong>Your slower days, imagined.</strong><p id="stay-preview-text"></p><p>This is a portfolio demo. Nothing has been reserved or sent.</p></div><p class="demo-note">Portfolio demo · No live availability or payments</p></dialog>
+</body>
+</html>
